@@ -12,6 +12,8 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CourseImage from "@/../../public/assets/courses.png";
+import {Button, ButtonGroup} from "@nextui-org/button";
+import Course from './Explore/page';
 
 AOS.init();
 
@@ -25,6 +27,7 @@ interface Course {
   startDate: string;
   registration: string;
   paymentLink: string;
+  explore: string;
 }
 
 const courses: Course[] = [
@@ -37,7 +40,8 @@ const courses: Course[] = [
     fee: "Rs 19,999/-",
     startDate: "Starts from 1st June 2024",
     registration: "Registrations Open",
-    paymentLink: "https://rzp.io/l/RwigF3Ds9"
+    paymentLink: "https://rzp.io/l/RwigF3Ds9",
+    explore: "/Pages/Components/Course/Explore"
   },
   {
     id: 2,
@@ -48,7 +52,8 @@ const courses: Course[] = [
     fee: "Rs 4,999/-",
     startDate: "New Batch starting soon",
     registration: "Registration Open",
-    paymentLink: "https://rzp.io/l/yOT3UZjG"
+    paymentLink: "https://rzp.io/l/yOT3UZjG",
+     explore: "/Pages/Components/Course/Explore"
   },
   {
     id: 3,
@@ -59,7 +64,8 @@ const courses: Course[] = [
     fee: "Rs 4,999/-",
     startDate: "New Batch starting soon",
     registration: "Registration Open",
-    paymentLink: "https://rzp.io/l/o0ATyl4"
+    paymentLink: "https://rzp.io/l/o0ATyl4",
+     explore: "/Pages/Components/Course/Explore"
   },
   {
     id: 4,
@@ -70,7 +76,8 @@ const courses: Course[] = [
     fee: "Rs 19,999/-",
     startDate: "New Batch starting soon",
     registration: "Registration Open",
-    paymentLink: "https://rzp.io/l/f4iP34VN"
+    paymentLink: "https://rzp.io/l/f4iP34VN",
+     explore: "/Pages/Components/Course/Explore"
   }
 ];
 
@@ -144,9 +151,10 @@ export default function CourseContainer() {
               <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.startDate}</p>
               <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.registration}</p>
               <div data-aos="fade-up" data-aos-delay="700" className="flex justify-between items-center mt-4">
-                <button data-aos="fade-up" data-aos-delay="700" className="bg-blue-600 hover:bg-blue-400 text-white rounded px-5 py-2 text-sm">Explore</button>
+               <a href={course.explore}>
+                <Button data-aos="fade-up" data-aos-delay="700" className="bg-blue-600 hover:bg-blue-400 text-white rounded px-5 py-2 text-sm" >Explore</Button></a>
                 <a href={course.paymentLink}>
-                  <button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 text-white rounded px-5 py-2 text-sm">Pay Now</button>
+                  <Button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 text-white rounded px-5 py-2 text-sm">Pay Now</Button>
                 </a>
               </div>
             </div>
