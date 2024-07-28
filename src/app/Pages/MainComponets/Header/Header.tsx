@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   };
 
   const courses = [
-    { name: "Python", link: "/courses/python" },
+    { name: "Python", link: "https://lms.forumde.in/courses/python-programming-mr-dinesh-kumar" },
     { name: "SQL", link: "/courses/sql" },
     { name: "Docker", link: "/courses/docker" },
     { name: "Kubernetes", link: "/courses/kubernetes" },
@@ -51,6 +51,7 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <li className="nav-item relative group">
+                  
                   <button className="nav-link px-2 py-2 text-black flex items-center">
                     Courses
                     <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
@@ -76,12 +77,12 @@ const Navbar: React.FC = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/contact-us" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-black" onClick={handleLinkClick}>Contact Us</a>
+                  <Link href="https://lms.forumde.in/support" legacyBehavior>
+                    <a className="nav-link px-2 py-2 text-black" onClick={handleLinkClick}>Support</a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/blogs" legacyBehavior>
+                  <Link href="https://lms.forumde.in/blog" legacyBehavior>
                     <a className="nav-link px-2 py-2 text-black" onClick={handleLinkClick}>Blogs</a>
                   </Link>
                 </li>

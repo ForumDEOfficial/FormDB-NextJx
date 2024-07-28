@@ -13,7 +13,7 @@ import AOS from 'aos';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CourseImage from "@/../../public/assets/courses.png";
 import {Button, ButtonGroup} from "@nextui-org/button";
-import Course from './Explore/page';
+import Course from '../SmallBar/page';
 
 AOS.init();
 
@@ -53,7 +53,7 @@ const courses: Course[] = [
     startDate: "New Batch starting soon",
     registration: "Registration Open",
     paymentLink: "https://rzp.io/l/yOT3UZjG",
-     explore: "/Pages/Components/Course/Explore"
+     explore: "https://lms.forumde.in/courses/python-programming-mr-dinesh-kumar"
   },
   {
     id: 3,
@@ -152,10 +152,10 @@ export default function CourseContainer() {
               <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.registration}</p>
               <div data-aos="fade-up" data-aos-delay="700" className="flex justify-between items-center mt-4">
                <a href={course.explore}>
-                <Button data-aos="fade-up" data-aos-delay="700" className="bg-blue-600 hover:bg-blue-400 text-white rounded px-5 py-2 text-sm" >Explore</Button></a>
-                <a href={course.paymentLink}>
+                <Button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 w-40 items-center text-white rounded px-6 py-3  m-1 text-xl" >Explore</Button></a>
+                {/* <a href={course.paymentLink}>
                   <Button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 text-white rounded px-5 py-2 text-sm">Pay Now</Button>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
