@@ -28,9 +28,9 @@ export default function Home() {
       <CustomMarquee/>
       <br />
       <FlashMessage/>
-      <Explorefx/>
       
       <WhyUs/>
+      <Explorefx/>
       <CourseContainer/>
       <MyCertificate/>
       <AboutUs/>

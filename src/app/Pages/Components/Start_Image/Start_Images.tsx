@@ -22,7 +22,7 @@ export function ImageCarousel() {
         <Image src={StartImage} data-aos="fade-zoom" data-aos-delay="700" className="h-auto w-full" alt="Sliding Image" />
       </div>
       <div className="mt-10">
-        <div className="flex flex-col lg:flex-row bg-orange-200 w-full h-auto">
+        <div className="flex flex-col lg:flex-row bg-orange-50 w-full h-auto">
           <div className="p-10 flex-1">
             <h1 className="font-bold text-4xl lg:text-5xl text-gray-800">
               Stay Ahead Of The Curve With Our Courses

@@ -17,9 +17,10 @@ const FlashMessage = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f3f4f6' }}>
       <style>{keyframesStyle}</style> {/* Inline keyframes definition */}
-      <div style={{ textAlign: 'center' }}>
+      <div className = " flex space-x-2"style={{ textAlign: 'center' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Next Batch Starting From </h1>
         <h1 style={{ fontSize: '2rem', fontWeight: 'bold', ...flashStyle }}>
-          Batch Started from 27 July
+           27 July 2024
         </h1>
       </div>
     </div>
