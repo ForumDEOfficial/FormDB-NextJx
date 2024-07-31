@@ -15,12 +15,12 @@ const FlashMessage = () => {
   `;
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#f3f4f6' }}>
+    <div className="flex border-2 p-6 w-fit shadow-xl bg-gray-100 mx-auto my-10 md:mx-20">
       <style>{keyframesStyle}</style> {/* Inline keyframes definition */}
-      <div className = " flex space-x-2"style={{ textAlign: 'center' }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bold' }}>Next Batch Starting From </h1>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', ...flashStyle }}>
-           27 July 2024
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center items-center">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl">Next Batch Starting From</h1>
+        <h1 className="px-3 text-2xl md:text-3xl lg:text-4xl font-bold" style={flashStyle}>
+          27 July 2024
         </h1>
       </div>
     </div>

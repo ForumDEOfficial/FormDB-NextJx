@@ -17,11 +17,14 @@ import Explorefx from "./Pages/Components/SmallBar/page";
 import Details from "./Pages/Components/Details/Page";
 import { Footer } from "./Pages/MainComponets/Footer/Footer";
 import FlashMessage from "./Pages/Components/Flash_component/page";
+import Navbar from "./Pages/MainComponets/Header/Header";
 
 
 export default function Home() {
   return (
    <div>
+    
+    
     <Details/>
 
       {/* <ImageCarousel/> */}
@@ -38,6 +41,7 @@ export default function Home() {
       <Testimonials/>
       <Logo_Marquee/>
       <Video/>
+      <Footer/>
    </div> 
   );
 }

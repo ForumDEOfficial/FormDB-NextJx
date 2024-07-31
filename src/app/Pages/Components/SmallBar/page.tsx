@@ -10,22 +10,22 @@ const Explorefx = () => {
      
       
       <div className='text-center w-full h-fit px-5 lg:px-28'>
-        <div className='flex flex-wrap justify-center'>
-          <div className='px-10 py-5 text-center'>
-            <h1 className='font-semibold text-4xl lg:text-2xl'>Job Assistance</h1>
-            <h6 className='font-bold'>Program</h6>
+        <div className='flex flex-wrap justify-center px-8'>
+          <div className='px-16 py-5 text-center  p-3 border-black shadow-lg'>
+            <h1 className='font-bold text-6xl lg:text-2xl'>Job Assistance</h1>
+            <h3 className='font-semibold text-xl'>Program</h3>
           </div>
-          <div className='px-10 py-5 text-center'>
-            <h1 className='font-semibold text-4xl lg:text-2xl'>6 Months</h1>
-            <h6 className='font-bold'>Duration</h6>
+          <div className='px-16 py-5 p-3 border-black shadow-lg text-center'>
+            <h1 className='font-bold text-6xl lg:text-2xl'>6 Months</h1>
+            <h3 className='font-semibold text-xl'>Duration</h3>
           </div>
-          <div className='px-10 py-5 text-center'>
-            <h1 className='font-semibold text-4xl lg:text-2xl'>Live + Recorded</h1>
-            <h6 className='font-bold'>Delivery Mode</h6>
+          <div className='px-16 py-5 p-3 border-black shadow-lg text-center'>
+            <h1 className='font-bold text-6xl lg:text-2xl'>Live + Recorded</h1>
+            <h3 className='font-semibold text-xl'>Delivery Mode</h3>
           </div>
-          <div className='px-10 py-5 text-center'>
+          <div className='px-16 py-5 p-3 border-black shadow-lg text-center'>
             <h1 className='font-semibold text-4xl lg:text-2xl'>English</h1>
-            <h6 className='font-bold'>Language</h6>
+            <h3 className='font-semibold text-xl'>Language</h3>
           </div>
         </div>
       </div>

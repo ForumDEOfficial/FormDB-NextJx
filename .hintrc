@@ -18,6 +18,15 @@
           "iframe[allow]"
         ]
       }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "max-height: fit-content",
+          "min-height: fit-content"
+        ]
+      }
     ]
   }
 }
