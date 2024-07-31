@@ -15,7 +15,7 @@ const FlashMessage = () => {
   `;
 
   return (
-    <div className="flex border-2 p-6 w-fit shadow-xl bg-gray-100 mx-auto my-10 md:mx-20">
+    <div className="flex border-2 p-6 w-fit shadow-xl bg-gray-100 mx-auto my-10 md:mx-20 content-center">
       <style>{keyframesStyle}</style> {/* Inline keyframes definition */}
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center items-center">
         <h1 className="text-2xl md:text-3xl lg:text-4xl">Next Batch Starting From</h1>

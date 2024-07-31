@@ -24,7 +24,7 @@ export default function Home() {
   return (
    <div>
     
-    
+    <Navbar/>
     <Details/>
 
       {/* <ImageCarousel/> */}
