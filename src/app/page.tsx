@@ -20,7 +20,7 @@ export default function Home() {
 
       <Navbar />
       <Details />
-      <br />
+      
       {/* <ImageCarousel/> */}
       <CustomMarquee />
       <br />
