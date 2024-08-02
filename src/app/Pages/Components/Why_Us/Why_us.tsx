@@ -41,24 +41,23 @@ const skillData = [
 
 export const WhyUs = () => {
   return (
-    <div className="py-14  sm:min-h-[600px] sm:grid sm:place-items-center text-black">
-      <div className="pb-12" >
-        <h1 className="text-6xl font-extrabold text-center font-serif sm:text-6xl">Why Choose Us</h1>
+    <div className=" sm:min-h-[500px] sm:grid sm:place-items-center text-black my-6">
+      <div className="" >
+        <h1 className="text-6xl font-extrabold text-center underline sm:text-6xl pt-6">Why Choose Us</h1>
       </div>
-      <div className=" grid grid-cols-1 sm:grid-cols-5 gap-4 px-4">
+      <div className=" grid grid-cols-5 lg:grid-cols-5 hidden:grid-cols-5 sm:grid-cols-1 px-4">
         {skillData.map((skill) => (
           <div 
             key={skill.name} 
             data-aos="fade-up" 
             data-aos-delay={skill.aosDelay} 
-            className="card text-center space-y-3 p-4 sm:py-16 hover:bg-orange-300 duration-300 rounded-lg" style={{}}
+            className="card text-center sm:py-16 hover:bg-orange-300 duration-300 rounded-lg shadow-md px-10" style={{}}
           >
-            <div className="grid place-items-center">
+            <div className="grid place-items-center py-4">
               {skill.icon}
             </div>
-            <h1 className="text-lg font-semibold">{skill.name}</h1>
-            <p className="max-w-xs mx-auto">{skill.description}</p>
-            {/* <a href={skill.link} className="text-orange-600 hover:underline hover:text-black">Learn More</a> */}
+            <h1 className="text-lg font-semibold py-4">{skill.name}</h1>
+            
           </div>
         ))}
       </div>

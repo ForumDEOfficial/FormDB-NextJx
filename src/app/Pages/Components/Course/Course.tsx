@@ -115,8 +115,8 @@ export default function CourseContainer() {
   };
 
   return (
-    <div data-aos="fade-up" data-aos-delay="700" className="container mx-auto py-6">
-      <Image src={CourseImage} alt="Courses" data-aos="fade-up" data-aos-delay="700" className='px-7 pb-4 mx-auto' />
+    <div data-aos="fade-up" data-aos-delay="500" className="container mx-auto py-10">
+      <h1 data-aos="fade-up" data-aos-delay="500" className='px-7 mx-auto text-center underline text-6xl font-bold py-8'  >Courses </h1>
       
       <Carousel
         responsive={{
@@ -127,7 +127,7 @@ export default function CourseContainer() {
         }}
         transitionDuration={2000}
         containerClass="carousel-container relative"
-        autoPlaySpeed={7000}
+        autoPlaySpeed={5000}
         draggable={true}
         centerMode={false}
         autoPlay={true}
@@ -140,22 +140,22 @@ export default function CourseContainer() {
         itemClass="px-4"
       >
         {courses.map((course) => (
-          <div key={course.id} data-aos="fade-up" data-aos-delay="700" className="bg-white text-black rounded-lg border border-gray-300 shadow-xl px-4 pb-4 pt-2 relative">
-            <div data-aos="fade-up" data-aos-delay="700" className='text-white bg-gradient-to-r from-blue-600 to-blue-300 px-5 py-1 mb-1 inline-block rounded-lg'> Best Selling </div>
+          <div key={course.id} data-aos="fade-up" data-aos-delay="500" className="bg-white text-black rounded-lg border border-gray-300 shadow-xl px-4 pb-4 pt-2 relative">
+            {/* <div data-aos="fade-up" data-aos-delay="500" className='text-white bg-gradient-to-r from-red-400 to-red-300 px-5 py-1 mb-1 inline-block rounded-lg'> Best Selling </div> */}
             <Image className="rounded-lg w-full h-50 object-cover mb-2" src={course.image as StaticImageData} alt={course.title} />
-            <div className="p-4">
-              <h6 data-aos="fade-up" data-aos-delay="700" className="text-lg font-bold">{course.title}</h6>
-              <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.description}</p>
-              <p data-aos="fade-up" data-aos-delay="700" className="text-sm"><strong>Duration:</strong> {course.duration}</p>
-              <p data-aos="fade-up" data-aos-delay="700" className="text-sm"><strong>Fees:</strong> {course.fee}</p>
-              <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.startDate}</p>
-              <p data-aos="fade-up" data-aos-delay="700" className="text-sm">{course.registration}</p>
-              <div data-aos="fade-up" data-aos-delay="700" className="flex justify-between items-center mt-4">
+            <div className="p-4 space-y-3 gap-">
+              <h6 data-aos="fade-up" data-aos-delay="500" className="text-lg font-bold">{course.title}</h6>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-sm">{course.description}</p>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-sm"><strong>Duration:</strong> {course.duration}</p>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-sm"><strong>Fees:</strong> {course.fee}</p>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-sm">{course.startDate}</p>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-sm">{course.registration}</p>
+              <div data-aos="fade-up" data-aos-delay="500" className="flex justify-between items-center mt-4">
                <a href={course.explore}>
-                <Button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 w-40 items-center text-white rounded px-6 py-3  m-1 text-xl" >Explore</Button></a>
-                {/* <a href={course.paymentLink}>
-                  <Button data-aos="fade-up" data-aos-delay="700" className="bg-green-600 hover:bg-green-400 text-white rounded px-5 py-2 text-sm">Pay Now</Button>
-                </a> */}
+                <Button data-aos="fade-up" data-aos-delay="500" className="bg-blue-500 hover:bg-blue-300 w-40 items-center text-white rounded px-6 py-3  m-1 text-xl" >Explore</Button></a>
+                <a href={course.paymentLink}>
+                  <Button data-aos="fade-up" data-aos-delay="500" className="bg-green-600 hover:bg-green-400 text-white rounded px-5 py-2 text-sm">Pay Now</Button>
+                </a>
               </div>
             </div>
           </div>

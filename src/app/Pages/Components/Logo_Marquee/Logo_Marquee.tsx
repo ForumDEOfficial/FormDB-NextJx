@@ -13,8 +13,8 @@ import Image from 'next/image'
 const Logo_Marquee = () => {
   return (
     <div>
-        
-            <h1 className=' text-center font-bold p-3 ' data-aos="fade-up" data-aos-delay="1200" style={{fontSize: 50}}>Our Technology </h1>
+         
+            <h1 className=' text-center font-extrabold underline p-3 text-6xl  ' data-aos="fade-up" data-aos-delay="1200" style={{fontSize: 50}}>Our Technology </h1>
         <div data-aos="fade-up" data-aos-delay="1000" className='py-4 rounded-xl w-50 h-50'>
         <Marquee speed={100} >
             <div >

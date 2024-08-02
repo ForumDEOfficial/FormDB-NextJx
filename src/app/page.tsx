@@ -1,9 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
-
-import Image from "next/image";
-
-import { Link } from "react-router-dom";
-import { ImageCarousel } from "./Pages/Components/Start_Image/Start_Images";
 import CustomMarquee from "./Pages/Components/Marquee/Marquee";
 import { WhyUs } from "./Pages/Components/Why_Us/Why_us";
 import CourseContainer from "./Pages/Components/Course/Course";
@@ -22,26 +16,28 @@ import Navbar from "./Pages/MainComponets/Header/Header";
 
 export default function Home() {
   return (
-   <div>
-    
-    <Navbar/>
-    <Details/>
+    <div>
 
-      {/* <ImageCarousel/> */}
-      <CustomMarquee/>
+      <Navbar />
+      <Details />
       <br />
-      <FlashMessage/>
-      
-      <WhyUs/>
-      <Explorefx/>
-      <CourseContainer/>
-      <MyCertificate/>
-      <AboutUs/>
-      <Mentors/>
-      <Testimonials/>
-      <Logo_Marquee/>
-      <Video/>
-      <Footer/>
-   </div> 
+      {/* <ImageCarousel/> */}
+      <CustomMarquee />
+      <br />
+      <FlashMessage /><br />
+
+      <WhyUs /><br />
+
+      <AboutUs /><br /><Explorefx /><br />
+      <CourseContainer /><br />
+      <MyCertificate /><br />
+
+      <Mentors /><br />
+      <Testimonials /><br />
+      <Logo_Marquee /><br />
+      <Video /><br />
+      {/* <FAQ/> */}
+      <Footer />
+    </div>
   );
 }

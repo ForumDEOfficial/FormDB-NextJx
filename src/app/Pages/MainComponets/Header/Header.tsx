@@ -29,11 +29,11 @@ const Navbar: React.FC = () => {
   return (
     <div className="bg-yellow-100 mb-5">
       <div className="container mx-auto">
-        <nav className="bg-gray-100 border-b border-black fixed top-0 left-0 right-0 z-50">
+        <nav className="bg-orange-200 border-b border-black fixed top-0 left-0 right-0 z-50">
           <div className="flex items-center justify-between p-4">
             <Link href="/" legacyBehavior>
               <a className="flex items-center">
-                <Image className="w-36" src={Logo} alt="Brand Logo" />
+                <Image className="w-40" src={Logo} alt="Brand Logo" />
               </a>
             </Link>
             <button
