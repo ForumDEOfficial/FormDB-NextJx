@@ -1,5 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonChalkboard, faLaptopCode, faHandshake, faBook, faHeadphonesSimple } from '@fortawesome/free-solid-svg-icons';
+import { Montserrat, Noto_Serif} from 'next/font/google';
+
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
+const inter= Noto_Serif({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
+
 
 const skillData = [
   {
@@ -15,7 +27,7 @@ const skillData = [
     aosDelay: "500"
   },
   {
-    name: "Job Assistance",
+    name: "Support",
     icon: (<FontAwesomeIcon icon={faHandshake} className="text-5xl text-black group-hover:text-white/50 duration-300"/>),
     link: "#",
     aosDelay: "600"
@@ -39,7 +51,7 @@ export const WhyUs = () => {
   return (
     <div className="sm:min-h-[500px] sm:grid sm:place-items-center text-black my-6">
       <div>
-        <h1 className="text-4xl font-extrabold text-center underline sm:text-6xl pt-6">Why Choose Us</h1>
+        <h1 className={`text-4xl font-extrabold text-center underline sm:text-6xl pt-6 ${montserrat.className}`}>Why Choose Us</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 py-10">
         {skillData.map((skill) => (
@@ -52,7 +64,7 @@ export const WhyUs = () => {
             <div className="grid place-items-center py-4">
               {skill.icon}
             </div>
-            <h1 className="text-lg font-semibold py-2">{skill.name}</h1>
+            <h1 className={`text-lg font-semibold py-2 ${inter.className}`}>{skill.name}</h1>
           </div>
         ))}
       </div>

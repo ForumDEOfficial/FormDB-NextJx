@@ -2,6 +2,7 @@ import React from 'react';
 
 const PrivacyPolicy: React.FC = () => {
   return (
+    
     <div className="container mx-auto p-6 px-32 space-y-5">
       <br />
       <br />

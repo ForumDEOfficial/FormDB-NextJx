@@ -6,7 +6,8 @@ const CustomMarquee: React.FC = () => {
     <div className='bg-yellow-200' data-aos="fade-up" data-aos-delay="700">
       <FastMarquee>
         <div>
-        New Batch for Azure data engineering is starting on 20th July 2024 *** Regristrations are open for all courses!! Enroll now.New Batch for Azure data engineering is starting on 20th July 2024 *** Regristrations are open for all courses!! Enroll now.
+        New Batch for Azure Data Engineering is starting on 25th August 2024 *** Registrations are open for all courses!! Enroll now. New Batch for Python is starting on 31st August 2024 *** Registrations are open for all courses!! Enroll now. New Batch for SQL is starting on 23rd August 2024 *** Registrations are open for all courses!! Enroll now.
+
         </div>
       </FastMarquee>
     </div>

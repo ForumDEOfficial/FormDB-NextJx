@@ -7,6 +7,17 @@ import img1 from "@/../../public/assets/Mentor_image/1.jpg";
 import img2 from "@/../../public/assets/Mentor_image/2.jpg";
 import img3 from "@/../../public/assets/Mentor_image/3.jpg";
 import img4 from "@/../../public/assets/Mentor_image/4.jpeg";
+import { Montserrat, Noto_Serif} from 'next/font/google';
+
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
+const inter= Noto_Serif({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
 
 const Mentors: React.FC = () => {
   interface ImageProps {
@@ -31,15 +42,15 @@ const Mentors: React.FC = () => {
   return (
     <>
       <div data-aos="fade-up" data-aos-delay="500" className="w-fit h-fit mx-auto mb-10" />
-      <h1 data-aos="fade-up" data-aos-delay="500" className="w-fit h-fit mx-auto mb-10 mt-5 text-center text-6xl font-bold underline" > Mentors </h1>
+      <h1 data-aos="fade-up" data-aos-delay="500" className={`w-fit h-fit mx-auto mb-10 mt-5 text-center text-6xl font-bold underline ${montserrat.className}`} > Mentors </h1>
       <div data-aos="fade-up" data-aos-delay="500" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 px-4">
         {images.map((image, index) => (
           <div key={index} className="relative flex flex-col items-center text-center bg-white rounded-lg shadow-lg p-6 border-2 border-gray-300">
             <Image data-aos="fade-up" data-aos-delay="500" src={image.src} alt={image.alt} className="w-full h-full object-cover rounded-lg mb-4 border-2 border-gray-300" />
-            <div data-aos="fade-up" data-aos-delay="500" className="text-xl font-bold text-3xl mb-2">{image.name}</div>
-            <div data-aos="fade-up" data-aos-delay="500" className="text-gray-700 mb-2">{image.detail}</div>
-            <div data-aos="fade-up" data-aos-delay="500" className="text-gray-700 mb-4">{image.detail2}</div>
-            <div data-aos="fade-up" data-aos-delay="500" className="text-gray-700 mb-4 font-bold">{image.mytech}</div>
+            <div data-aos="fade-up" data-aos-delay="500" className={`text-xl font-bold text-3xl mb-2 ${montserrat.className}`}>{image.name}</div>
+            <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-2 ${inter.className}`}>{image.detail}</div>
+            <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-4 ${inter.className}`}>{image.detail2}</div>
+            <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-4 font-bold ${inter.className}`}>{image.mytech}</div>
             <div data-aos="fade-up" data-aos-delay="500" className="flex space-x-4">
               <a data-aos="fade-up" data-aos-delay="500" href={image.facebook} rel="noopener noreferrer" className="text-blue-600 text-2xl">
                 <i data-aos="fade-up" data-aos-delay="500" className="fab fa-facebook"></i>

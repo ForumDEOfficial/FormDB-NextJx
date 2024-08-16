@@ -12,8 +12,8 @@ const legalLinks = [
 
 const usefulLinks = [
   { href: "https://lms.forumde.in/courses", text: "Our Courses" },
-  { href: "/our-selection", text: "Our Selection" },
-  { href: "/help", text: "Help" }
+  { href: "/Pages/Additional/Underconstruction", text: "Our Selection" },
+  { href: "/Pages/Additional/Underconstruction", text: "Help" }
 ];
 
 const contactInfo = [
