@@ -11,8 +11,10 @@ import Explorefx from "./Pages/Components/SmallBar/page";
 import Details from "./Pages/Components/Details/Page";
 import { Footer } from "./Pages/MainComponets/Footer/Footer";
 import FlashMessage from "./Pages/Components/Flash_component/page";
-import Navbar from "./Pages/MainComponets/Header/Header";
+import Navbar from "./Pages/MainComponets/Header/pages";
 import FAQ from "./Pages/Components/FAQ/faqpage";
+import Upcoming from "./Pages/Components/Upcoming_Course/pages";
+import Companies from "./Pages/Additional/Companies/pages";
 
 
 export default function Home() {
@@ -24,21 +26,23 @@ export default function Home() {
       
       {/* <ImageCarousel/> */}
       <CustomMarquee />
+      
       <br />
+      <Upcoming/>
      
-      <FlashMessage />
+      
 
-      <WhyUs /><br />
+  
 
-      <Explorefx /><br />
+      {/* <Explorefx /><br /> */}
       <CourseContainer /><br />
       <MyCertificate /><br />
 
       <Mentors /><br />
-     
+     <Companies/>
       <Logo_Marquee /><br />
       <Video /><br />
-      <FAQ/>
+      {/* <FAQ/> */}
       <Footer />
     </div>
   );

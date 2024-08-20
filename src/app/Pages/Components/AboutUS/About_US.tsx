@@ -6,6 +6,7 @@ import ProfileImage from "@/../../public/assets/ProfileImage.png";
 import Image from 'next/image';
 import { Montserrat, Noto_Serif } from 'next/font/google';
 import './Aboutus.css';
+import { WhyUs } from '../Why_Us/Why_us';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -56,18 +57,22 @@ export default function AboutUs() {
               <strong>Dear Students,</strong>
             </p>
             <p className={`mt-4 font-semibold animated-text ${inter.className}`}>
-              It is with great pleasure that I welcome you to ForumDE - your gateway to opportunities in Information Technology. As technology evolves rapidly, the demand for skilled IT professionals is higher than ever. We provide industry-level IT training in the latest technologies like Cloud (Azure, AWS, GCP), Data Engineering, Data Science, Docker and Kubernetes, Data Visualization, Business Analysis, and Project Management. At ForumDE, we understand the importance of staying ahead, adapting, and honing skills to meet the industry’s dynamic needs.
+              It is with great pleasure that I welcome you to ForumDE - your gateway to opportunities in Information Technology. As technology evolves rapidly, the demand for skilled IT professionals is higher than ever. We provide industry-level IT training in the latest technologies like Cloud (Azure, AWS, GCP), Data Engineering, Data Science, Docker and Kubernetes, Data Visualization, Business Analysis, and Project Management. At ForumDE, we understand the importance of staying ahead, adapting, and honing skills to meet the industry`s dynamic needs.
             </p>
             <p className={`mt-4 font-semibold animated-text ${inter.className}`}>
-              As you begin your journey toward a fulfilling career in IT, I encourage you to leverage the resources and opportunities at ForumDE. Whether you’re a professional aiming to advance your career or a fresh graduate eager to make your mark, our platform offers abundant resources, networking opportunities, and expert guidance to support you every step of the way. On behalf of the entire ForumDE team, I wish you the best in your pursuit of a rewarding career in Information Technology. Together, let’s shape the future of technology and create a brighter tomorrow for generations to come.
+              As you begin your journey toward a fulfilling career in IT, I encourage you to leverage the resources and opportunities at ForumDE. Whether you`re a professional aiming to advance your career or a fresh graduate eager to make your mark, our platform offers abundant resources, networking opportunities, and expert guidance to support you every step of the way. On behalf of the entire ForumDE team, I wish you the best in your pursuit of a rewarding career in Information Technology. Together, let`s shape the future of technology and create a brighter tomorrow for generations to come.
             </p>
             <p className={`mt-4 text-lg font-bold animated-text ${montserrat.className}`}>
               Best Regards, <br />
+             
               Arun Kumar
             </p>
           </div>
         </div>
-      </div>
+     <div>
+     
+     </div>
+      </div>  
     </div>
   );
 }

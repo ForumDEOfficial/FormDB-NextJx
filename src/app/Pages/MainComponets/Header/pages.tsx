@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                 </li>
                 <li className="nav-item">
                   <Link href="/Pages/Components/Testrimonials" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>Hall of Fame</a>
+                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>Our Selection</a>
                   </Link>
                 </li>
                 <li className="nav-item">

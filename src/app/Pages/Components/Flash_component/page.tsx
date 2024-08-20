@@ -16,7 +16,7 @@ const FlashMessage = () => {
 
   return (
    <div
-      className="flex border-2 p-6 justify-center align-self-center rounded-lg w-fit shadow-xl bg-orange-400 mx-auto my-10 md:mx-20"
+      className=" p-3 justify-center align-self-center rounded-lg w-fit shadow-xl bg-orange-400 mx-auto my-5 md:mx-10"
       style={{
         margin: '0 auto',
         display: 'flex',
@@ -24,9 +24,9 @@ const FlashMessage = () => {
       }}
     >
         <style>{keyframesStyle}</style> {/* Inline keyframes definition */}
-        <div className="flex flex-col md:flex-row space-y-4  md:space-y-0 md:space-x-4 text-center items-center">
-    
-          <h1 className="px-3 text-2xl md:text-3xl lg:text-4xl font-bold " style={flashStyle}>
+        <div className=" space-y-1  md:space-y-0 md:space-x-4 text-center items-center">
+    <h2 className='font-normal text-l sm:text-l'>We Provide Best</h2>
+          <h1 className="px-3 text-xl md:text-2xl lg:text-2xl font-bold " style={flashStyle}>
            Job Assistance 
           </h1>
         </div>

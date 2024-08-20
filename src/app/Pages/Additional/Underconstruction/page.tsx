@@ -3,7 +3,7 @@
 import React from 'react';
 import animation01 from '@/../../public/assets/lottie/Animation - 1722623312901.json';
 import Lottie from 'lottie-react';
-import Navbar from '../../MainComponets/Header/Header';
+import Navbar from '../../MainComponets/Header/pages';
 
 const Page = () => {
   const defaultOptions = {
