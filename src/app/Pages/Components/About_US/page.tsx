@@ -10,7 +10,49 @@ import Navbar from '../../MainComponets/Header/pages';
 import { WhyUs } from '../Why_Us/Why_us';
 import mission from '@/../../public/assets/lottie/mission.json';
 import Lottie from 'lottie-react';
+import Nandini from '@../../../public/assets/FDELogo.png'
+ 
+const TeamsData =[
+  {
+    id : 1,
+    name: "Nandini",
+    team: "Tech Team",
+    description : "dsajkfnsdajnidsajnfsdfunsduifndsuinfuidsnfuidsnfindsabufdsjfnuisdn",
+    img : Nandini
 
+  },
+  {
+    id : 2,
+    name: "Nandini",
+    team: "Tech Team",
+    description : "dsajkfnsdajnidsajnfsdfunsduifndsuinfuidsnfuidsnfindsabufdsjfnuisdn",
+    img : Nandini
+
+  },
+  {
+    id : 3,
+    name: "Nandini",
+    team: "Tech Team",
+    description : "dsajkfnsdajnidsajnfsdfunsduifndsuinfuidsnfuidsnfindsabufdsjfnuisdn",
+    img : Nandini
+  },
+  {
+    id : 4,
+    name: "Nandini",
+    team: "Tech Team",
+    description : "dsajkfnsdajnidsajnfsdfunsduifndsuinfuidsnfuidsnfindsabufdsjfnuisdn",
+    img : Nandini
+
+  },
+  {
+    id : 5,
+    name: "Nandini",
+    team: "Tech Team",
+    description : "dsajkfnsdajnidsajnfsdfunsduifndsuinfuidsnfuidsnfindsabufdsjfnuisdn",
+    img : Nandini
+
+  }
+]
 // Initialize custom fonts
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -105,22 +147,38 @@ export default function AboutUs() {
         <div className="mt-10">
           <h1 className="text-center text-4xl md:text-5xl font-semibold underline">Our Mission</h1>
           <div className="flex flex-wrap mt-8 items-center">
-            <div className="w-full md:w-[60%] lg:w-[35%] p-10 mt-14">
+            <div className="w-full md:min-w-[60%] lg:w-[35%] p-10 mt-14">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda repellat blanditiis dicta, et dolore voluptatibus quod quasi, quas facere vel eveniet laboriosam id ad consequatur maiores ullam, sapiente officia?</p>
             </div>
-            <div className="w-full md:w-[40%] lg:w-[30%]">
+            <div className="w-full md:min-w-[40%] lg:w-[30%]">
               <Lottie {...missionAnimation} className="pt-18 p-5" />
             </div>
           </div>
         </div>
 
-        {/* Teams Section */}
+        {/* Teams Section
         <div className="mt-10">
           <h1 className="text-center text-4xl md:text-5xl font-semibold underline">Our Teams</h1>
           <div className="mt-8 flex flex-wrap">
             <p className="w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda repellat blanditiis dicta, et dolore voluptatibus quod quasi, quas facere vel eveniet laboriosam id ad consequatur maiores ullam, sapiente officia?</p>
           </div>
-        </div>
+          <div className='p-5 grid grid-cols-2 gap-4'>
+  {TeamsData.map((data) => (
+    <div key={data.id} className='flex flex-col border-2 rounded-lg w-full md:w-1/2 w-fit'>
+      <div className='w-full'>
+        <Image src={data.img} alt={data.name} className='object-cover rounded-t-lg w-full h-auto' />
+      </div>
+      <div className='p-4'>
+        <h1 className='text-lg font-bold'>{data.name}</h1>
+        <h2 className='text-md font-semibold text-gray-600'>{data.team}</h2>
+        <p className='mt-2'>{data.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+
+        </div> */}
       </div>
     </>
   );

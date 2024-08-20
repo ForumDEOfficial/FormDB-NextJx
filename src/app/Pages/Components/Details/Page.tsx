@@ -74,12 +74,7 @@ const Details = () => {
               <Lottie {...downloadOptions} className="ml-2" style={{ height: '50px', width: '50px' }} />
             </button>
           </a>
-          <a href="/src/app/Pages/MainComponets/Header" download="100-Day-Data-Engineering-Plan">
-            <button className="flex items-center justify-center px-7 py-1 rounded-xl bg-green-300 border-2 border-black text-black text-xl lg:text-xl w-auto lg:w-auto">
-            Contact Us
-              <Lottie {...callOptions} className="ml-2" style={{ height: '50px', width: '50px' }} />
-            </button>
-          </a>
+          
        
         </div>
          
