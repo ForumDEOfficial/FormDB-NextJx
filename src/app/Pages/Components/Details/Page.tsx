@@ -48,28 +48,28 @@ const Details = () => {
   };
 
   return (
-    <div className="pt-20 lg:mt-10 flex flex-col lg:flex-row relative p-5 min-h-[9%] w-full bg-orange-50">
+    <div className="pt-20 lg:mt-10 flex flex-col lg:flex-row relative p-5 min-h-[9%] w-full bg-orange-100">
       <div className="w-full lg:w-2/3 p-1 mx-4">
         <h1 className={`font-bold pb-1 text-3xl lg:text-4xl text-gray-800 ${montserrat.className}`}>
           FREE!! 100-Day Self-Study Plan to Learn Data Engineering
         </h1>
         <br />
         <div className="w-full">
-          <p className={`text-1xl py-1 lg:text-xl text-gray-800 ${inter.className}`}>
+          <p className={`text-2xl py-1  text-gray-800 ${inter.className}`}>
           We have developed a 100-day self-study plan for students aspiring to become Azure Data Engineers. Based on our interactions with many learners, we`ve noticed a lack of clear direction on what and how to study. Our plan sets daily targets to guide students effectively towards their goal.
           </p>
-          <h2 className={`pt-1 text-1xl lg:text-xl text-gray-800 ${inter.className}`}>
+          <h2 className={`pt-2 text-2xl  text-gray-800 ${inter.className}`}>
             Do follow the plan and make yourself ready to crack the Azure Data Engineering Interview.
           </h2>
           <br />
-          <p className={`text-1xl py-1 pt-1 lg:text-1xl text-gray-700 ${inter.className}`}>
+          <p className={`text-2xl py-1 pt-1  text-gray-700 ${inter.className}`}>
             Use the below <b>Download</b> button to download the plan.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center space-y-4 lg:space-y-0 lg:space-x-4 mt-6 w-full">
           
         <a href="/assets/Pdf/Plan.pdf" download="100-Day-Data-Engineering-Plan">
-            <button className="flex items-center justify-center px-7 py-1 rounded-xl bg-red-400 border-2 border-black text-white text-xl lg:text-xl w-auto lg:w-auto">
+            <button className="flex items-center justify-center px-7 py-1 rounded-xl bg-red-400 border-2 border-black text-white text-2xl lg:text-2xl w-auto lg:w-auto">
               Download
               <Lottie {...downloadOptions} className="ml-2" style={{ height: '50px', width: '50px' }} />
             </button>
@@ -81,7 +81,7 @@ const Details = () => {
         <button></button>
       </div>
       <div className="w-full lg:w-2/5 justify-center items-center">   <FlashMessage/>
-        <img src={gif.src} alt="Logo GIF" className="rounded-lg h-auto w-auto" />
+        <img src={gif.src} alt="Logo GIF" className="rounded-lg h-fit w-fit " />
       </div>
     </div>
   );

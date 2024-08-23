@@ -54,10 +54,10 @@ export default function MyCertificate() {
           <p data-aos="fade-down" data-aos-delay="700" className={`animated-text text-4xl sm:text-5xl md:text-6xl italic font-extrabold underline mb-4 sm:mb-6 md:mb-14 ${montserrat.className}`}>
             Certificate of Achievement
           </p>
-          <p data-aos="fade-down" data-aos-delay="700" className={`animated-text text-base sm:text-lg md:text-xl font-medium mt-2 ${inter.className}`}>
+          <p data-aos="fade-down" data-aos-delay="700" className={`animated-text text-base sm:text-lg md:text-2xl font-medium mt-2 ${inter.className}`}>
             Congratulations on completing the Azure Data Constellation: Engineering the Future course! A course completion certificate will be given to students on completion of 60% of the course. This certificate will enhance your LinkedIn Profile and help you in grabbing a good job. Best wishes for your future endeavors.
           </p>
-          <p data-aos="fade-down" data-aos-delay="700" className={`animated-text text-lg sm:text-xl md:text-2xl mt-5 font-semibold ${inter.className}`}>
+          <p data-aos="fade-down" data-aos-delay="700" className={`animated-text text-lg sm:text-2xl md:text-2xl mt-5 font-semibold ${inter.className}`}>
             Best Regards, <br />
             Arun Kumar
           </p>

@@ -12,9 +12,9 @@ const Companies = () => {
   return (
     <>
      <div>
-          <div className="text-center text-4xl sm:text-5xl lg:text-5xl pt-8 lg:pt-16 font-semibold">
+          {/* <div className="text-center text-4xl sm:text-5xl lg:text-5xl pt-8 lg:pt-16 font-bold underline">
             Where our Achievers are
-          </div>
+          </div> */}
 
           {/* Grid for displaying logos, responsive columns */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 p-4 sm:p-8 gap-4">

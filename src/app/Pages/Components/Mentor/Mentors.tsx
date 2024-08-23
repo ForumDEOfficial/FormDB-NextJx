@@ -47,7 +47,7 @@ const Mentors: React.FC = () => {
         {images.map((image, index) => (
           <div key={index} className="relative flex flex-col items-center text-center bg-white rounded-lg shadow-lg p-6 border-2 border-gray-300">
             <Image data-aos="fade-up" data-aos-delay="500" src={image.src} alt={image.alt} className="w-full h-full object-cover rounded-lg mb-4 border-2 border-gray-300" />
-            <div data-aos="fade-up" data-aos-delay="500" className={`text-xl font-bold text-3xl mb-2 ${montserrat.className}`}>{image.name}</div>
+            <div data-aos="fade-up" data-aos-delay="500" className={`text-2xl font-bold text-3xl mb-2 ${montserrat.className}`}>{image.name}</div>
             <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-2 ${inter.className}`}>{image.detail}</div>
             <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-4 ${inter.className}`}>{image.detail2}</div>
             <div data-aos="fade-up" data-aos-delay="500" className={`text-gray-700 mb-4 font-bold ${inter.className}`}>{image.mytech}</div>

@@ -41,7 +41,7 @@
 //           <div className="flex-1 p-10 flex items-center justify-center">
 //             {/* Placeholder for future content like images, animations, or a call-to-action */}
 //             <div className="bg-white shadow-lg rounded-lg p-8">
-//               <h2 className="font-semibold text-xl text-gray-800 mb-4">Enhance Your Skills</h2>
+//               <h2 className="font-semibold text-2xl text-gray-800 mb-4">Enhance Your Skills</h2>
 //               <p className="text-gray-600">
 //                 Join us to gain practical experience and enhance your skills with our comprehensive courses.
 //               </p>

@@ -42,7 +42,7 @@ const courses: Course[] = [
   {
     id: 1,
     image: Azure,
-    title: "Azure Data Engineering",
+    title: "Azure Data Engineering **BEST SELLING**",
     description: "Job Assistance || Real-Time Projects || Assignments || Live classes || Recordings",
     duration: "3 Months",
     fee: "Rs 19,999/-",
@@ -54,7 +54,7 @@ const courses: Course[] = [
   {
     id: 2,
     image: Python,
-    title: "Python Programming",
+    title: "Python Programming **BEST SELLING**",
     description: "Python from zero to hero course || Hands-On Training || Assignments || Recordings",
     duration: "2 Months",
     fee: "Rs 4,999/-",
@@ -159,7 +159,7 @@ export default function CourseContainer() {
               <p className={`text-sm font-bold ${inter.className}`}>{course.registration}</p>
               <div className="flex justify-between items-center mt-4 ">
                 <a href={course.explore}>
-                  <Button className="bg-blue-500 hover:bg-blue-300 items-center text-white rounded px-3 py-3 w-fit text-xl mx-1">Explore</Button>
+                  <Button className="bg-blue-500 hover:bg-blue-300 items-center text-white rounded px-3 py-3 w-fit text-2xl mx-1">Explore</Button>
                 </a>
                 <a href={course.paymentLink}>
                   <Button className="bg-green-600 hover:bg-green-400 text-white rounded px-2 w-fit py-2 text-sm">Download Syllabus</Button>

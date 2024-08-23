@@ -1,6 +1,11 @@
 import React from 'react';
-import Image from 'next/image'; // Import the Image component
+import Image from 'next/image';
+import arun from '@/../../public/assets/Mentor_image/1.jpg'; 
+import akshay from '@../../../public/assets/Mentor_image/4.jpeg';
+import dinesh from '@../../../public/assets/Mentor_image/3.jpg';
 import datascience from '@/../../public/assets/Logo/Azure.jpg';
+import python from '@../../../public/assets/Logo/Python.jpg';
+import SQL from '@../../../public/assets/courses/sql.png';
 
 // Array holding upcoming event details
 const upcomingdetails = [
@@ -9,24 +14,27 @@ const upcomingdetails = [
         name: "Azure",
         date: "2024-08-25",
         time: "10:00 AM",
-        tutor: datascience,
+        tutor: arun,
+        course: datascience,
         mentor: "Arun Kumar"
     },
     {
         id: 2,
-        name: "Azure",
+        name: "Python",
         date: "2024-09-01",
         time: "10:00 AM",
-        tutor: datascience,
-        mentor: "Arun Kumar"
+        tutor: akshay,
+        course: python,
+        mentor: "Dinesh Kumar"
     },
     {
         id: 3,
-        name: "Azure",
+        name: "SQL",
         date: "2024-09-10",
         time: "10:00 AM",
-        tutor: datascience,
-        mentor: "Arun Kumar"
+        tutor: dinesh,
+        course: SQL,
+        mentor: "Akshay Kaushal"
     },
 ];
 
@@ -54,7 +62,7 @@ const Upcoming = () => {
                             <div className='tables rounded-xl p-1 w-full h-auto flex items-center justify-center text-center border-2 border-black shadow-xl'>
                                 <div className='px-8'>
                                     <Image
-                                        src={data.tutor}
+                                        src={data.course}
                                         alt={`${data.name} Tutor`}
                                         className='rounded-full w-36 p-1' />
                                     <h2 className='text-center'>{data.name}</h2>

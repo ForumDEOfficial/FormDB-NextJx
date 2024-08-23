@@ -5,17 +5,17 @@ const ContactButtonsData = [
   {
     id: 1,
     name: "Student fndjksfndsk",
-    Phonenumber: "58959199"
+    Phonenumber: "+91 9801830173"
   },
   {
     id: 2,
-    name: "Student fndjksfndsk",
-    Phonenumber: "58959199"
+    name: "Student Counselling number",
+    Phonenumber: "+91 7870970617"
   },
   {
     id: 3,
-    name: "Student fndjksfndsk",
-    Phonenumber: "58959199"
+    name: "Student Support number",
+    Phonenumber: "+91 76439 69853 "
   }
 ];
 
@@ -33,9 +33,9 @@ const ContactUsButtons = () => {
       {ContactButtonsData.map((contact) => (
         <div 
           key={contact.id} 
-          className='border-3 bg-green-200 rounded-xl p-3 border-black text-center'
+          className='border-3 bg-green-200 rounded-2xl p-3 border-black text-center'
         >
-          <p className='text-sm'>{contact.name}</p>
+          <p className='text-2xl font-semibold'>{contact.name}</p>
           <p 
             className={`text-2xl cursor-pointer hover:text-red-500 ${copiedNumber === contact.Phonenumber ? 'text-blue-700' : ''}`}
             onClick={() => handleCopy(contact.Phonenumber)}

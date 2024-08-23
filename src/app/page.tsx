@@ -15,21 +15,13 @@ import ContactUsButtons from "./Pages/Components/ContactUS/contactpage";
 export default function Home() {
   return (
     <div>
-
       <Navbar />
       <Details />
-      
       {/* <ImageCarousel/> */}
       <CustomMarquee />
    <ContactUsButtons/>
-      
       <br />
       <Upcoming/>
-     
-      
-
-  
-
       {/* <Explorefx /><br /> */}
       <CourseContainer /><br />
       <MyCertificate /><br />

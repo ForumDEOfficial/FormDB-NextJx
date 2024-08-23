@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="bg-yellow-100 mb-5">
       <div className="container mx-auto">
-        <nav className="bg-orange-100 border-b border-black fixed top-0 left-0 right-0 z-50">
+        <nav className="bg-orange-200 border-b border-black fixed top-0 left-0 right-0 z-50">
           <div className="flex items-center justify-between p-4">
             <Link href="/" legacyBehavior>
               <a className="flex items-center">
@@ -47,12 +47,12 @@ const Navbar: React.FC = () => {
               <ul className="flex flex-col md:flex-row md:items-center md:justify-center w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4 font-bold">
                 <li className="nav-item">
                   <Link href="/" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>Home</a>
+                    <a className="nav-link px-2 py-2 text-2xl text-black" onClick={handleLinkClick}>Home</a>
                   </Link>
                 </li>
                 <li className="nav-item relative group">
                   
-                  <button className="nav-link px-2 py-2 text-xl text-black flex items-center">
+                  <button className="nav-link px-2 py-2 text-2xl text-black flex items-center">
                     Courses
                     <FontAwesomeIcon icon={faChevronDown} className="ml-1" />
                   </button>
@@ -73,26 +73,26 @@ const Navbar: React.FC = () => {
                 </li>
                 <li className="nav-item">
                   <Link href="/Pages/Components/Testrimonials" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>Our Selection</a>
+                    <a className="nav-link px-2 py-2 text-2xl text-black" onClick={handleLinkClick}>Achiever`s Wall</a>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link href="/Pages/Components/About_US" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>About US</a>
+                    <a className="nav-link px-2 py-2 text-2xl text-black" onClick={handleLinkClick}>About US</a>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link href="https://lms.forumde.in/blog" legacyBehavior>
-                    <a className="nav-link px-2 py-2 text-xl text-black" onClick={handleLinkClick}>Blogs</a>
+                    <a className="nav-link px-2 py-2 text-2xl text-black" onClick={handleLinkClick}>Blogs</a>
                   </Link>
                 </li>
               </ul>
               <a href="https://lms.forumde.in/" className="block md:hidden mt-4">
-                <button className="Signbtn rounded-full text-xl bg-orange-500 text-white px-5 py-3 hover:bg-orange-300">Dashboard</button>
+                <button className="Signbtn rounded-full text-2xl bg-orange-500 text-white px-5 py-3 hover:bg-orange-300">Dashboard</button>
               </a>
             </div>
             <a href="https://lms.forumde.in/" className="hidden md:block">
-              <button className="Signbtn rounded-full text-xl bg-orange-500 text-white px-5 py-3 hover:bg-orange-300">Dashboard</button>
+              <button className="Signbtn rounded-full text-2xl bg-orange-500 text-white px-5 py-3 hover:bg-orange-300">Dashboard</button>
               
             </a>
             

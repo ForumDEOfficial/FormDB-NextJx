@@ -53,7 +53,7 @@ export default function AboutUs() {
         <div className="md:col-span-2">
           <h1 className={`text-4xl md:text-6xl font-bold mb-6 underline ${montserrat.className}`} data-aos="fade-left">About Us</h1>
           <div data-aos="fade-left">
-            <p className={`text-xl leading-relaxed animated-text ${montserrat.className}`}>
+            <p className={`text-2xl leading-relaxed animated-text ${montserrat.className}`}>
               <strong>Dear Students,</strong>
             </p>
             <p className={`mt-4 font-semibold animated-text ${inter.className}`}>
