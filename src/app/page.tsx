@@ -26,6 +26,7 @@ export default function Home() {
       <MyCertificate /><br />
 
       <Mentors /><br />
+      <h1 className=" text-center text-6xl font-bold py-10 underline">Our Achivers Are Working In</h1>
      <Companies/>
       <Logo_Marquee /><br />
       <Video /><br />
